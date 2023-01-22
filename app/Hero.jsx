@@ -6,16 +6,16 @@ import Scroll from "react-scroll";
 function Hero() {
   const scroll = Scroll.animateScroll;
   return (
-    <div className="w-full h-screen flex items-center px-10 justify-start relative imagewraper">
+    <div className="w-full h-screen flex items-center px-10 justify-start  imagewraper">
       <div className="fixed top-0 left-0 w-full h-full">
         <Image
           src={HeroImage}
-          fill
           className="object-cover"
+          fill
           priority={true}
           placeholder="blur"
           sizes="(max-width: 768px) 100vw,
-      (max-width: 1200px) 50vw,
+      (max-width: 1200px) 100vw,
       33vw"
           alt="Hero background"
         />
@@ -25,7 +25,7 @@ function Hero() {
         <h1 className="text-2xl md:text-4xl  text-neutral-50 font-IransansBold">
           خوش آمدید به{" "}
           <span className="text-amber-600 inline-block md:inline md:text-7xl text-6xl mt-5">
-            کافی شاپ
+            کافی شاپ{" "}
           </span>
         </h1>
         <p className="max-w-[700px] text-sm md:text-lg font-IransansThin  text-neutral-200">
